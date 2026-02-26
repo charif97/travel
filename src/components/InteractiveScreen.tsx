@@ -46,9 +46,9 @@ export default function InteractiveScreen({ html, screenName }: InteractiveScree
                     const svgIndex = Array.from(iconsAround).indexOf(target as any);
 
                     // Simplistic mapping for standard "4-icon" bottom bars
-                    // 1: Home/Dashboard, 2: Discover/Search, 3: Maps/Itinerary, 4: Profile
-                    if (svgIndex === 0) router.push('/home'); // Assuming 'home' is a stitched screen or default '/'
-                    else if (svgIndex === 1) router.push('/search'); // Or '/decouvrir'
+                    // 1: Home/Dashboard, 2: Chat Assistant, 3: Maps/Itinerary, 4: Profile
+                    if (svgIndex === 0) router.push('/home');
+                    else if (svgIndex === 1) router.push('/chat');
                     else if (svgIndex === 2) router.push('/itineraire');
                     else if (svgIndex === 3) router.push('/profil');
 
