@@ -41,6 +41,17 @@ export default function Accueil() {
             </div>
 
             <div className="px-6 py-6">
+                {/* New Screens Index Banner */}
+                <Link href="/tous-les-ecrans" className="mb-8 bg-gradient-to-r from-purple-500 to-[#1152d4] rounded-2xl p-4 text-white shadow-lg flex justify-between items-center group">
+                    <div>
+                        <h3 className="font-bold text-lg mb-1">Explorez 33 nouveaux écrans</h3>
+                        <p className="text-sm text-white/80">Découvrez les interfaces Stitch générées.</p>
+                    </div>
+                    <div className="bg-white/20 p-2 rounded-full group-hover:bg-white group-hover:text-[#1152d4] transition-colors">
+                        <Navigation2 className="w-5 h-5 rotate-90" />
+                    </div>
+                </Link>
+
                 {/* Categories Grid */}
                 <div className="flex justify-between mb-8">
                     {categories.map((cat, idx) => (
