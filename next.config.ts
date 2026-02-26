@@ -4,10 +4,6 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: '/home',
-        destination: '/s_tableau_de_bord_principal_home_2',
-      },
-      {
         source: '/chat',
         destination: '/s_alfred_chat_l_exp_rience_poto',
       },
